@@ -266,6 +266,11 @@
     left: 45%;
   }
 
+  .space {
+    display: block;
+    height: 0.4rem;
+  }
+
   .qa__box > dl > dt {
     background-color: #fff;
     display: flex;
@@ -349,4 +354,5 @@
   footer {
     background-color: dimgray;
     height: 100px;
+    margin-top: 200px;
   }
