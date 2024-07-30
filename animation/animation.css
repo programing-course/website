@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+header{
+  background-color: #f8dddd;
+  text-align: center;
+  padding:  30px;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+h2 {
+  margin: 30px;
+  border-bottom: solid 2px #c4c4c4;
+}
+h3{
+  margin: 30px;
+}
+
+.box1{
+  width: 300px;
+  padding: 20px 10px;
+  font-size: 3rem;
+  text-align: center;
+  background-color: aqua;
+  color: #fff;
+}
+
+/* ホバーしたらアニメーション */
+.box1:hover{
+  animation: box1 1s 0.3s ease-in-out forwards;
+}
+
+@keyframes box1 {
+  0%{
+    background-color: aqua;
+    color: #fff;
+  }
+  100%{
+    background-color: rgb(205, 255, 255);
+    color: #000000;
+  }
+}
+
+.box_img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box_img1 {
+  width: 280px;
+  height: 170px;
+  border: solid 3px #000;
+}
+
+.box_img2 {
+  width: 280px;
+  height: 170px;
+  border: solid 3px #000;
+  overflow: hidden;
+}
+
+.box_img3 {
+  width: 280px;
+  height: 170px;
+  border: solid 3px #000;
+  overflow: hidden;
+}
+
+.box_img3 img{
+  opacity:0.5;
+}
+.box_img3 img:hover{
+  animation: img3 1s forwards;
+}
+
+@keyframes img3 {
+  0%{
+    opacity:0.5;
+    transform: scale(1);
+  }
+  /* 50%{
+    opacity:0.7;
+    transform: scale(1.1);
+  } */
+  100%{
+    opacity:1.0;
+    transform: scale(1.5);
+  }
+}
+
+.transform {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box4, .box5{
+  width: 200px;
+  height: 200px;
+  background-color: #f8dddd;
+}
+
+.box4 {
+  transform: translateY(30px); /*最初少し下にずらしておく*/
+  animation: top 2s ease-in-out forwards;
+}
+
+@keyframes top {
+  0%{
+    transform: translateY(30px);
+  }
+  30%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+  
+}
+
+.box5 {
+  border-radius: 50%;
+  transform: translateY(-20px);
+  animation: bottom 1.5s ease-in infinite;
+}
+
+@keyframes bottom {
+  0%{
+    transform: translateY(0);
+  }
+  70%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+  
+}
+
+.box6 {
+  font-size: 3rem;
+  transform: translateX(-50px);
+  animation: left 2s  ease-in-out infinite forwards;
+}
+
+@keyframes left {
+  0%{
+    transform: translateX(-50px);
+  }
+  100%{
+    transform: translateX(20px);
+  }
+  
+}
+
+.box7 {
+  font-size: 3rem;
+  transform: translateX(50px);
+  animation: right 2s  ease-in-out infinite forwards;
+}
+
+@keyframes right {
+  0%{
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+}
+
+
+
+/* カルーセルの外枠 */
+.carousel_1 {
+  width: 320px;
+  height: 120px;
+  display: flex;    
+  /* overflow: hidden;   */
+  margin: 0 auto;   
+}
+/* カルーセル内の画像 */
+.carousel_1 img {
+  margin: 0;
+  padding: 0;
+}
+
+/* カルーセルの子要素にスクロールアニメーションを設定 */
+.carousel_1 > :first-child {
+  animation: scroll 20s 0s infinite;
+}
+
+/* スクロールアニメーションのキーフレーム */
+@keyframes scroll {
+  /* 初期位置は1個目の画像が左端 */
+  0% { margin-left: 0; }      
+  /* 1個分左の位置に進めて2個目の画像を左端にする */
+  20% { margin-left: -100%; }
+  /* 少しの間上と同じ位置 */  
+  25% { margin-left: -100%; }
+  /* 2個分左の位置に進めて3個目の画像を左端にする */
+  45% { margin-left: -200%; }
+  /* 少しの間上と同じ位置 */  
+  50% { margin-left: -200%; }
+  /* 以降は上と同様に繰り返し */
+  70% { margin-left: -300%; }
+  75% { margin-left: -300%; }
+  95% { margin-left: -400%; }
+  100% { margin-left: -400%; }
+}
+
+/* カルーセルの外枠 */
+.carousel_2 {
+  width: 320px;
+  height: 120px;
+  display: flex;    
+  overflow: hidden;  
+  margin: 0 auto;   
+}
+/* カルーセル内の画像 */
+.carousel_2 img {
+  margin: 0;
+  padding: 0;
+}
+
+/* カルーセルの子要素にスクロールアニメーションを設定 */
+.carousel_2 > :first-child {
+  animation: scroll 20s 0s infinite;
+}
+
+
+
+
