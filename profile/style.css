@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+body{
+    color: rgb(95, 95, 95);
+}
+
+header{
+    background-color: rgb(255, 252, 245);
+}
+
+main{
+    background-color: rgb(255, 252, 245);
+}
+
+footer{
+    background-color: rgb(217, 255, 202);
+}
+
+h1{
+    color: #f694a0;
+    font-size: 2.3rem;
+}
+
+h2, h3, h4{
+    color: #f694a0;
+    padding: 3vh 0;
+}
+
+nav{
+    background-color: rgb(197 234 250);
+    text-align: center;
+}
+
+nav ul {
+    padding: 1rem 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f694a0;
+    text-decoration: none;
+    padding: 1rem 4rem;
+}
+
+nav a:hover {
+    color:black;
+}
+
+.profile {
+    text-align: center;
+    background-color: rgb(255, 252, 245);
+}
+
+.profile p {
+    line-height: 2;
+    margin: 30px;
+}
+
+.profile img{
+    width: 80%;
+}
+
+.profile_info{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+/* -------２ページ目------------------- */
+.like {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.favorite {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: rgb(255, 253, 240);
+    border: solid 5px rgb(197 234 250);
+    margin-bottom: 50px;
+}
+
+.box img {
+    width: 300px;
+}
+
+.box p{
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.box .text {
+    width: 50%;
+}
